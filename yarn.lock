@@ -1185,6 +1185,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wix/dashboard-sdk@npm:^3.20.0":
+  version: 3.20.0
+  resolution: "@wix/dashboard-sdk@npm:3.20.0"
+  dependencies:
+    comlink: 4.3.0
+    tslib: ^2.3.1
+  checksum: 8d877160f9550b1753431758c991a97223756735b564c8cb8935d8fab3dcad71377722d9d007924a297486f27d0156b34630b034ba6f2ee2634c060977eba43b
+  languageName: node
+  linkType: hard
+
 "@wix/wix-ui-icons-common@npm:^3.0.0":
   version: 3.0.10
   resolution: "@wix/wix-ui-icons-common@npm:3.0.10"
@@ -1971,6 +1981,13 @@ __metadata:
   version: 2.0.19
   resolution: "colorette@npm:2.0.19"
   checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
+  languageName: node
+  linkType: hard
+
+"comlink@npm:4.3.0":
+  version: 4.3.0
+  resolution: "comlink@npm:4.3.0"
+  checksum: 03083cda86546b94d70a628301256c1568ec1bb8422faef103b57fd8d9fe490699729a44493d35f96ebc602b3d7f9d1caf1f6e970b7981753bca00f6d4accb4b
   languageName: node
   linkType: hard
 
@@ -7459,7 +7476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.4.0":
+"tslib@npm:^2.0.3, tslib@npm:^2.3.1, tslib@npm:^2.4.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
@@ -8087,6 +8104,7 @@ __metadata:
     "@types/react-dom": ^18.0.6
     "@typescript-eslint/eslint-plugin": ^5.39.0
     "@typescript-eslint/parser": ^5.39.0
+    "@wix/dashboard-sdk": ^3.20.0
     eslint: ^8.24.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-react: ^7.31.8

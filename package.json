@@ -19,6 +19,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@wix/dashboard-sdk": "^3.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "wix-style-react": "^10.57.0"

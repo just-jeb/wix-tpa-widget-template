@@ -11,6 +11,8 @@
 }
 
 :global(html) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family:
     system-ui,
     /* macOS 10.11-10.12 */

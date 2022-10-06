@@ -27,7 +27,7 @@ export default {
     },
     plugins: [
         new StylableWebpackPlugin({ stcConfig: true }),
-        new HtmlWebpackPlugin({ title: 'Stylable App' }),
+        new HtmlWebpackPlugin({ title: 'Stylable App', template: 'index.html' }),
     ],
     cache: { type: 'filesystem' },
 };
