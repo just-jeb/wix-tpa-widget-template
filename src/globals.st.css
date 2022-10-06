@@ -11,8 +11,6 @@
 }
 
 :global(html) {
-  background-color: rgb(37, 37, 38);
-  color: white;
   font-family:
     system-ui,
     /* macOS 10.11-10.12 */
