@@ -1,8 +1,9 @@
-import type { FC } from 'react';
+import { FC, useEffect } from 'react';
 import type React from 'react';
 import { Avatar, Box, Card, ListItemSelect, ListItemSelectProps, TextButton, ThemeProvider } from 'wix-style-react';
 import { theme } from 'wix-style-react/themes/businessDashboard';
 import { Add } from 'wix-ui-icons-common';
+import { observeState } from '@wix/dashboard-sdk';
 export interface AppProps {
   className?: string;
 }
@@ -21,6 +22,13 @@ const ListItem: FC<ListItemSelectProps> = ({ title, subtitle, suffix }) => (
 )
 
 export const App: React.FC<AppProps> = () => {
+  useEffect(() => {
+    console.log('In use effect')
+    observeState(props => {
+      console.log(props);
+      (props as any)?.onLoaded();
+    })
+  }, [])
   return (
     <ThemeProvider theme={theme({ active: true })}>
       <Card>
