@@ -8120,6 +8120,7 @@ __metadata:
     webpack-cli: ^4.10.0
     webpack-dev-server: ^4.11.1
     wix-style-react: ^10.57.0
+    wix-ui-icons-common: ^2.0.409
   languageName: unknown
   linkType: soft
 
@@ -8169,7 +8170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wix-ui-icons-common@npm:2.0.409":
+"wix-ui-icons-common@npm:2.0.409, wix-ui-icons-common@npm:^2.0.409":
   version: 2.0.409
   resolution: "wix-ui-icons-common@npm:2.0.409"
   dependencies:
