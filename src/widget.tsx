@@ -36,7 +36,7 @@ export const Widget: FC = () => {
       <Card>
         <WidgetHeader/>
         <Box paddingTop={'12px'} direction='vertical'>
-          {data.map(({ id, content, hint, dateCreated }) => (<WidgetItem key={id} title={content} subtitle={hint} suffix={dateCreated} />))}
+          {data.map(({ id, content, hint, dateCreated, pageId }) => (<WidgetItem key={id} title={content} subtitle={hint} suffix={dateCreated} pageId={pageId} />))}
         </Box>
         <WidgetFooter/>
       </Card>
