@@ -21,12 +21,14 @@ const ListItem: FC<ListItemSelectProps> = ({ title, subtitle, suffix }) => (
     </Box></>
 )
 
+export interface DashboardWidgetProps {
+  onLoaded?: () => void;
+}
+
 export const App: React.FC<AppProps> = () => {
   useEffect(() => {
-    console.log('In use effect')
-    observeState(props => {
-      console.log(props);
-      (props as any)?.onLoaded();
+    observeState<DashboardWidgetProps>(props => {
+      props.onLoaded?.();
     })
   }, [])
   return (
@@ -51,7 +53,7 @@ export const App: React.FC<AppProps> = () => {
           />
         </Box>
         <Box padding={'16px 24px'}>
-          <TextButton size={'tiny'} weight='normal'>See All(10)</TextButton>
+          <TextButton size={'tiny'} weight='normal'>See All (10)</TextButton>
         </Box>
       </Card>
     </ThemeProvider>

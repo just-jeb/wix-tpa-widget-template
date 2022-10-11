@@ -7,6 +7,15 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 export default {
     mode: 'development',
     devtool: 'source-map',
+    devServer: {
+        port: 55100,
+        client: {
+          overlay: {
+            errors: true,
+            warnings: false,
+          },
+        },
+      },
     module: {
         rules: [
             {
